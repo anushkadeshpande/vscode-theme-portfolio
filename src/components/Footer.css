@@ -1,0 +1,27 @@
+.Footer{
+    height:30px;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    background-color: #0175C1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.Footer__logos {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40px;
+}
+
+@media screen and (max-width: 800px) {
+    .Footer__logos {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        padding-right: 20px;
+    }
+    
+}

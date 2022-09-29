@@ -1,0 +1,27 @@
+.Main{
+    position: absolute;
+    height: 100%;
+    left: 60px;
+    width: calc(100vw - 60px);
+    display: flex;
+    background-color: #1D1E22;
+    /* overflow-y: scroll; */
+/*     
+ */
+    /* word-wrap: break-word; */
+}
+
+.Main__content {
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    
+    .Main{
+        overflow-y: scroll;
+        margin-bottom: 70px;
+    }
+}

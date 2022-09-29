@@ -1,0 +1,39 @@
+.Menu {
+    position: absolute;
+    background-color: #333333;
+    height: 100%;
+    left: 0;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    margin: auto auto;
+    /* min-height: 100vh; */
+}
+
+.Menu>a {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #949494;
+    border-left: 2px solid transparent;
+}
+
+.Menu svg {
+    height: 30px;
+    margin: auto auto;
+}
+
+.Menu>a:hover,
+.active {
+    color: #fff !important;
+    border-left: 2px solid #fff !important;
+}
+
+/* @media screen and (max-width: 800px) {
+    .Menu {
+        height: 140vh;
+
+    }   
+} */

@@ -1,0 +1,27 @@
+.Header{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 30px;
+    align-items: center;
+    display: flex;
+    background-color: #3C3C3C;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    border: none;
+    border-radius: 20px;
+}
+
+.Header__dots {
+    display: flex;
+    justify-content: space-evenly;
+    width: 60px;
+}
+
+.Header__title{
+    color: #a2a2a2;
+    margin: auto auto;
+}

@@ -1,0 +1,21 @@
+.Projects {
+    height: 100%;
+    width: 100%;
+}
+
+.Projects__list {
+    height: 100%;
+    width: 25%;
+}
+
+@media screen and (max-width: 800px) {
+    .Projects__list {
+        width: 100%;
+ 
+    }
+    
+    .Projects__page {
+        width: 0px;
+        display: none;
+    }
+}
