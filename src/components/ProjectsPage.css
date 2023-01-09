@@ -1,0 +1,28 @@
+.ProjectsPage {
+    color: rgb(204, 204, 204);
+    
+}
+
+.ProjectsPage__header {
+    position: relative;
+    width: 100%;
+    height: 40px;
+}
+
+.ProjectsPage__body {
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.ProjectsPage__body__header {
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    /* margin: auto auto; */
+}
+
+.ProjectsPage__body__header > img {
+    height: 8rem;   
+}
+

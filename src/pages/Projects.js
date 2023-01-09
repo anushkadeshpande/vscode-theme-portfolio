@@ -1,6 +1,7 @@
 import './Projects.css'
 import ProjectsList from '../components/ProjectsList'
 import TabBar from "../components/TabBar";
+import ProjectsPage from '../components/ProjectsPage';
 
 const Projects = () => {
     return (
@@ -11,6 +12,7 @@ const Projects = () => {
             </div>
             <div className="Projects__page">
                 {/* <ProjectsPage id="" /> data has to be picked from firebase */}
+                <ProjectsPage id={"Home"}/>
             </div>
 
         </div>

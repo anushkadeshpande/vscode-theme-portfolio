@@ -10,10 +10,11 @@
 }
 
 .Footer__logos {
-    width: 30%;
+    width: 20%;
     display: flex;
     justify-content: space-between;
     padding-right: 40px;
+    
 }
 
 @media screen and (max-width: 800px) {

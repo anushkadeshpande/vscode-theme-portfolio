@@ -4,9 +4,11 @@ import Header from "./components/Header";
 import Menu from "./components/Menu";
 import Main from "./components/Main";
 import { BrowserRouter as Router } from "react-router-dom";
+import ProjectState from "./context/Project/ProjectState";
 
 function App() {
   return (
+    <ProjectState>
     <div className="App">
       <Header />
       <div className="App__Main">
@@ -17,6 +19,7 @@ function App() {
       </div>
       <Footer />
     </div>
+    </ProjectState>
   );
 }
 

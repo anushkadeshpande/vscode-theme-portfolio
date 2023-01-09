@@ -1,21 +1,29 @@
 .Projects {
     height: 100%;
     width: 100%;
+    display: flex;
 }
 
 .Projects__list {
     height: 100%;
-    width: 25%;
+    width: 25vw;
 }
 
-@media screen and (max-width: 1000px) {
+.Projects__page {
+    height: calc(100% - 80px);
+    width: 75vw;
+}
+
+@media screen and (max-width: 800px) {
+    /* .Projects{
+        flex-direction: column;
+    } */
     .Projects__list {
         width: 100%;
- 
     }
     
     .Projects__page {
-        width: 0px;
+        width: 100%;
         display: none;
     }
 }

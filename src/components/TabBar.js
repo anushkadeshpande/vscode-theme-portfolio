@@ -8,7 +8,7 @@ const TabBar = ({tabName}) => {
      const currentTab = useLocation().pathname;
 
     const [currentData, setCurrentData] = useState({})
-
+    
     useEffect(()=> {
       if(tabName === 'Home') 
         setCurrentData({Logo: Logo, TabHead: "Me"})
