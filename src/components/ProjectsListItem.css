@@ -1,56 +1,54 @@
 .ProjectsListItem {
-    margin-left: 20px;
-    margin-right: 15px;
-    display: flex;
-    position: relative;
-    margin-bottom: 15px;
-  
+  margin-left: 20px;
+  margin-right: 15px;
+  display: flex;
+  margin-bottom: 10px;
+  width: 100%;
 }
 
 .ProjectsListItem > img {
-    height: 50px;
-    width: 50px
+    height: 45px;
+    width: 45px;
+  }
+
+.ProjectsListItem > span {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 45px);
 }
 
-.ProjectsListItem > button {
-    background-color:#317534;
-    color: #fff;
-    height: 15px;
-    padding: 7px;
-    border: none;
-    position: absolute;
-    bottom: -10px;
-    right: 0px;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
+.ProjectsListItem > span > button {
+  background-color: #0E639C;
+  color: #fff;
+  height: 15px;
+  padding: 10px;
+  border: none;
+  box-sizing: border-box;
+  display: flex;
+  margin-left: auto;
+  margin-right: 30px;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.project_details {
+    margin-left: 5px;
 }
 
 .project_details > h4 {
-    color: rgb(184, 184, 184);
-    margin-bottom: 5px;
+  color: rgb(184, 184, 184);
+  margin-bottom: 5px;
+  line-height: 1;
 }
 
 .project_details > h5 {
-    color: rgb(139, 138, 138);
-    font-weight: 500;
-    width: 60%;
-    white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+  color: rgb(139, 138, 138);
+  font-weight: 500;
+  width: 75%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.6;
 }
 
-@media screen and (max-width: 1175px) {
-    .project_details > h5 {
-        width: 30%;
-    }
-    
-}
-
-@media screen and (max-width: 800px) {
-    .project_details > h5 {
-        width: 70%;
-    }
-    
-}
