@@ -14,6 +14,12 @@
     width: 75vw;
 }
 
+.no_open_project {
+    color: '#ffffff97';
+    text-align: "center"; 
+    margin-top: '200px'
+}
+
 @media screen and (max-width: 800px) {
     /* .Projects{
         flex-direction: column;
@@ -21,9 +27,18 @@
     .Projects__list {
         width: 100%;
     }
-    
-    .Projects__page {
+
+    .Projects__list_mobileView {
+        width: 0px;
+        display: none;
+    }
+
+    .Projects__page_mobileView {
         width: 100%;
+        display: block;
+    }
+
+    .no_open_project {
         display: none;
     }
 }
