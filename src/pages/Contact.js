@@ -46,7 +46,7 @@ const Contact = () => {
         </div>
             
         <div className="Contact__rhs">
-        <TabBar tabName="liveview" />
+        <TabBar tabName="Live Preview" />
 <ContactBrowser />
     </div>        
         </div>

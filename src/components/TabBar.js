@@ -14,7 +14,7 @@ const TabBar = ({tabName}) => {
         setCurrentData({Logo: Logo, TabHead: "Me"})
       else if(tabName === 'Contact')
         setCurrentData({Logo: CSSLogo, TabHead: "Contact.css"})
-      else if(tabName === 'liveview')
+      else if(tabName === 'Live Preview')
         setCurrentData({Logo: Logo, TabHead: tabName})
     }, [currentTab, tabName])
     
