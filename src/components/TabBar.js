@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
  import Logo from '../assets/logo.svg'
  import CSSLogo from '../assets/css3.svg'
 
-const TabBar = ({tabName}) => {
+const TabBar = ({tabName, logo}) => {
      const currentTab = useLocation().pathname;
 
     const [currentData, setCurrentData] = useState({})
@@ -16,6 +16,8 @@ const TabBar = ({tabName}) => {
         setCurrentData({Logo: CSSLogo, TabHead: "Contact.css"})
       else if(tabName === 'Live Preview')
         setCurrentData({Logo: Logo, TabHead: tabName})
+      else 
+      setCurrentData({Logo: logo, TabHead: tabName, showCloseButton: true})
     }, [currentTab, tabName])
     
     return(

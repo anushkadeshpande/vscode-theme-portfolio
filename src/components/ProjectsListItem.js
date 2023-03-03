@@ -6,7 +6,7 @@ import ProjectContext from "../context/Project/ProjectContext";
 const ProjectsListItem = ({ data }) => {
   const projectData = useContext(ProjectContext);
   return (
-    <div className="ProjectsListItem">
+    <div className="ProjectsListItem" onClick={() => projectData.updateState(data)}>
       <img src={data.logo} />
       <span>
         <div className="project_details">

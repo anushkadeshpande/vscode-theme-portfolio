@@ -4,20 +4,20 @@ import TabBar from "./TabBar";
 import Logo from "../assets/logo.svg";
 import ProjectContext from "../context/Project/ProjectContext";
 
-const ProjectsPage = ({ id }) => {
+const ProjectsPage = () => {
 
   const projectData = useContext(ProjectContext)
-  console.log(projectData.project)
-  if(id!=="") {
+  // console.log(projectData.project.Name)
+  
   return (
     <div className="ProjectsPage">
       <div className="ProjectsPage__header">
-        <TabBar tabName={id} />
+        <TabBar tabName={projectData.project.Name} logo={projectData.project.logo} />
       </div>
 
       <div className="ProjectsPage__body">
         <div className="ProjectsPage__body__header">
-          <img src={Logo} />
+          <img src={projectData.project.logo} />
 
           <div className="header_content">
             <h1>
@@ -38,12 +38,7 @@ const ProjectsPage = ({ id }) => {
       </div>
     </div>
   );
-  }
-  else {
-    return(
-      <></>
-    )
-  }
+  
 };
 
 
