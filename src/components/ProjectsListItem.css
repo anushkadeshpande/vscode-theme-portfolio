@@ -8,25 +8,25 @@
 }
 
 .ProjectsListItem:hover {
-  background-color: #2A2D2E;
+  background-color: #2a2d2e;
   cursor: pointer;
-padding-left: 30px;
-margin-left: -10px;
+  padding-left: 30px;
+  margin-left: -10px;
 }
 
 .ProjectsListItem > img {
-    height: 45px;
-    width: 45px;
-  }
+  height: 45px;
+  width: 45px;
+}
 
 .ProjectsListItem > span {
-    display: flex;
-    flex-direction: column;
-    width: calc(100% - 45px);
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 45px);
 }
 
 .ProjectsListItem > span > button {
-  background-color: #0E639C;
+  background-color: #0e639c;
   color: #fff;
   height: 15px;
   padding: 10px;
@@ -41,7 +41,7 @@ margin-left: -10px;
 }
 
 .project_details {
-    margin-left: 5px;
+  margin-left: 5px;
 }
 
 .project_details > h4 {
@@ -59,4 +59,3 @@ margin-left: -10px;
   text-overflow: ellipsis;
   line-height: 1.6;
 }
-

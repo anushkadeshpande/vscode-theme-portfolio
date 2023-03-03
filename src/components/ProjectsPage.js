@@ -29,8 +29,8 @@ const ProjectsPage = () => {
             </p>
 
             <div className="header__buttons" >
-              <button style={projectData.project == {}?{display:"none !important"}:{}}>Try</button>
-              <button style={projectData.project == {}?{display:"none !important"}:{}}>Code</button>
+              <a href={projectData.project.URL} target="_blank"><button>Try</button></a>
+              <a href={projectData.project.source} target="_blank"><button>Code</button></a>
             </div>
           </div>
         </div>
