@@ -15,9 +15,9 @@
 }
 
 .no_open_project {
-    color: '#ffffff97';
-    text-align: "center"; 
-    margin-top: '200px'
+    color: #ffffff97;
+    text-align: center; 
+    margin-top: 200px
 }
 
 @media screen and (max-width: 800px) {
