@@ -99,6 +99,7 @@ background-color: #1D1E22;
         display: flex;
         flex-direction: column;
         margin-top: 40px;
+        padding-bottom: 30px;
     }
 
     .Home__content__rhs {
