@@ -1,9 +1,11 @@
 .About {
     color: #fff;
+    height: 100%;
+    overflow-y: scroll;
 }
 
 .About__content {
-    margin: 80px;
+    margin: 80px 200px 80px 200px;
 }
 
 .About__content__header {
@@ -12,6 +14,49 @@
 
 .About__content__header > hr {
     margin-top: 20px;
+}
+
+.About__content__body {
+    color: #c4c4c4;
+    margin-top: 40px;
+    font-size: 17px;
+}
+
+.About__content__body > div > ul {
+    margin-top: 25px;
+    margin-left: 40px;
+    line-height: 2;
+}
+
+.About__content__body > div > ul > li > a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #0a8fe8;
+    cursor: pointer;
+}
+
+.About__section {
+    margin-top: 40px;
+}
+
+.About__section__head {
+    font-size: 30px;
+}
+
+/* .About__content__body > div > ul > li {
+    list-style: none;
+}
+
+.About__content__body > div > ul > li:before {
+    content:"· ";
+    font-size:40px;
+    vertical-align:middle;
+    line-height:1px;
+} */
+
+.technologyCards {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 @media screen and (max-width: 800px) {

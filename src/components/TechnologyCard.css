@@ -1,0 +1,16 @@
+.TechnologyCard {
+    height: 75px;
+    width: 75px;
+    background-color: #33343b;
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.TechnologyCard > img {
+    margin-bottom: 5px;
+    height: 50px;
+}
