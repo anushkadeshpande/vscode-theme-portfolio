@@ -1,0 +1,24 @@
+.About {
+    color: #fff;
+}
+
+.About__content {
+    margin: 80px;
+}
+
+.About__content__header {
+    font-size: 40px;
+}
+
+.About__content__header > hr {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .About__content {
+        margin: 70px 20px 50px 20px;
+    }
+    .About__content__header {
+        font-size: 30px;
+    }
+}

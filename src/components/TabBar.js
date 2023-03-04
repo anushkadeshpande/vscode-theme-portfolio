@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import { useState, useEffect, useContext } from "react";
 import Logo from "../assets/logo.svg";
 import CSSLogo from "../assets/css3.svg";
+import File from "../assets/file.svg";
 import ProjectContext from "../context/Project/ProjectContext";
 
 const TabBar = ({ tabName, logo }) => {
@@ -17,6 +18,8 @@ const TabBar = ({ tabName, logo }) => {
       setCurrentData({ Logo: CSSLogo, TabHead: "Contact.css" });
     else if (tabName === "Live Preview")
       setCurrentData({ Logo: Logo, TabHead: tabName });
+    else if (tabName === "Release Notes")
+      setCurrentData({Logo: File, TabHead: tabName })
     else
       setCurrentData({ Logo: logo, TabHead: tabName, showCloseButton: true });
   }, [currentTab, tabName]);
