@@ -12,12 +12,12 @@ export const technologyData = [
     {
         id: 3,
         name: "NodeJS",
-        logo: "https://cdn.iconscout.com/icon/free/png-256/node-js-1174925.png"
+        logo: "../assets/logos/nodejs.png"
     },
     {
         id: 4,
         name: "Firebase",
-        logo: "https://assets.stickpng.com/images/5847f40ecef1014c0b5e488a.png"
+        logo: "../assets/logos/firebase.png"
     },
     {
         id: 5,
