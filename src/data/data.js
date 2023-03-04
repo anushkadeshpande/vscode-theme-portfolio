@@ -2,12 +2,12 @@ export const technologyData = [
     {
         id: 1,
         name: "ReactJS",
-        logo: "https://cdn1.iconfinder.com/data/icons/programing-development-8/24/react_logo-512.png"
+        logo: "../assets/logos/react.png"
     },
     {
         id: 2,
         name: "JavaScript",
-        logo: "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+        logo: "../assets/logos/js.png"
     },
     {
         id: 3,

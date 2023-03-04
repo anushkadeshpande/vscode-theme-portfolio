@@ -2,6 +2,7 @@ import TabBar from "../components/TabBar";
 import "./About.css";
 import { technologyData as data } from "../data/data";
 import TechnologyCard from "../components/TechnologyCard";
+import { Link, Route } from "react-router-dom";
 
 
 
@@ -84,13 +85,13 @@ const About = () => {
                     <a href="#technologySection">Technologies worked on</a>
                 </li>
                 <li>
-                    <a>Projects</a>
+                    <Link to="/projects">Projects</Link>
                 </li>
                 <li>
-                    <a>Other Activities</a>
+                    <Link to="/activities">Other Activities</Link>
                 </li>
                 <li>
-                    <a>Contact</a>
+                    <Link to="/contact">Contact</Link>
                 </li>
             </ul>
           </div>
@@ -117,7 +118,7 @@ const About = () => {
           </div>
           
           <div className="About__section">
-            <p className="About__section__head" id="educationSection">Technologies Worked on</p>
+            <p className="About__section__head" id="technologySection">Technologies Worked on</p>
             <div className="technologyCards">
                 {data.map(dataItem => 
                     <TechnologyCard data={dataItem} />)}
