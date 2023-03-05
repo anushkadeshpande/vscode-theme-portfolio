@@ -1,6 +1,27 @@
+import { useState } from 'react'
 import "./ContactBrowser.css";
+import { contactForm } from "../firebase";
+import { doc, setDoc } from "firebase/firestore"; 
 
 const ContactBrowser = () => {
+
+  const [ name, setName ] = useState("")
+  const [ email, setEmail ] = useState("")
+  const [ message, setMessage ] = useState("") 
+  
+
+  const submitForm = () => {
+    setDoc(doc(contactForm), {
+      name: name,
+      email: email,
+      message: message
+    });
+
+    setName("")
+    setEmail("")
+    setMessage("")
+  } 
+
   return (
     <div className="ContactBrowser">
       <div className="ContactBrowser__header">
@@ -14,10 +35,10 @@ const ContactBrowser = () => {
           Have something to say? <span>Get in touch.</span>
         </div>
         <div className="ContactBrowser__body__form">
-          <input type="text" placeholder="Name" />
-          <input type="text" placeholder="Email" />
-          <input type="text" placeholder="Message" />
-          <button>
+          <input type="text" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} />
+          <input type="text" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
+          <textarea placeholder="Message" value={message} onChange={(e) => setMessage(e.target.value)} />
+          <button onClick={() => submitForm()}>
             Send{" "}
             <svg
               xmlns="http://www.w3.org/2000/svg"

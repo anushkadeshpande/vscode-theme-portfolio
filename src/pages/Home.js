@@ -26,7 +26,7 @@ const Home = () => {
               </li>
 
               <li>
-                <Link to="/other">Other Activities</Link>
+                <a href="https://annkived.web.app/" target="_blank">Other Activities</a>
               </li>
               
               <li>
@@ -39,18 +39,13 @@ const Home = () => {
             <h3>Recent</h3>
             <ul>
               <li>
-                <a>Placeholder...</a>
-                <p>A:\\Path\to\something</p>
+                <a href="https://github.com/anushkadeshpande" target="_blank">Checkout my Github</a>
+                <p>github.com/anushkadeshpande</p>
               </li>
 
               <li>
-                <a>Placeholder...</a>
-                <p>A:\\Path\to\something</p>
-              </li>
-
-              <li>
-                <a>Placeholder...</a>
-                <p>A:\\Path\to\something</p>
+                <a href="https://instagram-4.web.app" target="_blank">Instagram Clone</a>
+                <p>instagram-4.web.app</p>
               </li>
             </ul>
           </div>
@@ -59,16 +54,13 @@ const Home = () => {
             <h3>Help</h3>
             <ul>
               <li>
-                <a>Placeholder...</a>
+                <Link to="/about">Know More</Link>
               </li>
 
               <li>
-                <a>Placeholder...</a>
+              <Link to="/contact">Contact</Link>
               </li>
 
-              <li>
-                <a>Placeholder...</a>
-              </li>
             </ul>
           </div>
 
@@ -78,30 +70,23 @@ const Home = () => {
         <div className="Home__content__rhs">
         <h3>Quick Links</h3>
         <ul>
-            <li><a href="#">
-                <div className="list_item_header">This is something</div>
-                <div className="list_item_description">This is the description to the above something. Got it?</div>
+            <li><Link to="/projects">
+                <div className="list_item_header">Projects</div>
+                <div className="list_item_description">Checkout the projects I've built</div>
+                </Link>
+            </li>
+
+            <li><a href="https://annkived.web.app/" target="_blank">
+                <div className="list_item_header">Archive</div>
+                <div className="list_item_description">Enter my annkive!</div>
                 </a>
             </li>
 
-            <li><a href="#">
-                <div className="list_item_header">This is something</div>
-                <div className="list_item_description">This is the description to the above something. Got it?</div>
-                </a>
+            <li><Link to="/projects">
+                <div className="list_item_header">Blogs</div>
+                <div className="list_item_description">Few blogs I've written</div>
+                </Link>
             </li>
-
-            <li><a href="#">
-                <div className="list_item_header">This is something</div>
-                <div className="list_item_description">This is the description to the above something. Got it?</div>
-                </a>
-            </li>
-
-            <li><a href="#">
-                <div className="list_item_header">This is something</div>
-                <div className="list_item_description">This is the description to the above something. Got it?</div>
-                </a>
-            </li>
-
         </ul>
         </div>
       </div>

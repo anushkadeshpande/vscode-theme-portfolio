@@ -76,12 +76,17 @@
     align-items: center;
 }
 
-.ContactBrowser__body__form > input{
+.ContactBrowser__body__form > input, .ContactBrowser__body__form > textarea{
     outline: none;
     margin: 20px;
     padding: 10px;
     font-size: 20px;
     border: 1px solid #ff400b;
+}
+
+.ContactBrowser__body__form > textarea
+{
+    resize: none;
 }
 
 .ContactBrowser__body__form > button {

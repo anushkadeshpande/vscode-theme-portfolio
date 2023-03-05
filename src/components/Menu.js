@@ -15,7 +15,7 @@ const Menu = () => {
       <Link to='/' className={location.pathname === "/"? "active" : ""}><Home /></Link>
       <Link to='/about' className={location.pathname === "/about"? "active" : ""}><Profile /></Link>
       <Link to='/projects' className={location.pathname === "/projects"? "active" : ""}><Apps /></Link>
-      <Link to='/activities' className={location.pathname === "/activities"? "active" : ""}><Other /></Link>
+      <a href='https://annkived.web.app/' target="_blank" className={location.pathname === "/activities"? "active" : ""}><Other /></a>
       <Link to='/contact' className={location.pathname === "/contact"? "active" : ""}><Contact /></Link>
     </div>
   );

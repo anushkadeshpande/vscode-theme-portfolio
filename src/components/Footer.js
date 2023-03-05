@@ -8,10 +8,10 @@ const Footer = () => {
   return (
     <div className="Footer">
     <div className="Footer__logos">
-    <a href="https://github.com/anushkadeshpande" target="_blank"><Github /></a>
-    <a href="https://www.linkedin.com/in/anushka-deshpande-67710a174" target="_blank"><Linkedin /></a>
-    <a href="https://www.instagram.com/anotherushka/" target="_blank"><Instagram /></a>
-    <a href="https://twitter.com/anushkaa5000" target="_blank"><Twitter /></a>
+    <a href="https://github.com/anushkadeshpande" target="_blank" style={{height: "20px"}}><Github /></a>
+    <a href="https://www.linkedin.com/in/anushka-deshpande-67710a174" target="_blank" style={{height: "20px"}}><Linkedin /></a>
+    <a href="https://www.instagram.com/anotherushka/" target="_blank" style={{height: "20px"}}><Instagram /></a>
+    <a href="https://twitter.com/anushkaa5000" target="_blank" style={{height: "20px"}}><Twitter /></a>
     </div>
         </div>
   );
