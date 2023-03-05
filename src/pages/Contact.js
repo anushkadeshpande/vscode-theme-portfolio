@@ -33,28 +33,28 @@ const Contact = () => {
               <span className="lineNo">4</span>
               <p className="contactInfo__props">
                 <span style={{ color: " #c1eafa" }}>github:</span>{" "}
-                {"'github.com/anushkadeshpande'"};
+                <a href="https://github.com/anushkadeshpande" style={{textDecoration: "none", color: "#89ddff"}} target="_blank">{"'anushkadeshpande'"};</a>
               </p>
             </p>
             <p style={{ display: "flex" }}>
               <span className="lineNo">5</span>
               <p className="contactInfo__props">
                 <span style={{ color: " #c1eafa" }}>linkedin:</span>{" "}
-                {"'anushkaa5000@gmail.com'"};
+                <a href="https://www.linkedin.com/in/anushka-deshpande-67710a174" style={{textDecoration: "none", color: "#89ddff"}} target="_blank">{"'anushka-deshpande-67710a174'"};</a>
               </p>
             </p>
             <p style={{ display: "flex" }}>
               <span className="lineNo">6</span>
               <p className="contactInfo__props">
                 <span style={{ color: " #c1eafa" }}>instagram:</span>{" "}
-                {"'anushkaa5000@gmail.com'"};
+                <a href="https://www.instagram.com/anotherushka/" style={{textDecoration: "none", color: "#89ddff"}} target="_blank">{"'anotherushka'"};</a>
               </p>
             </p>
             <p style={{ display: "flex" }}>
               <span className="lineNo">7</span>
               <p className="contactInfo__props">
                 <span style={{ color: " #c1eafa" }}>twitter:</span>{" "}
-                {"'anushkaa5000@gmail.com'"};
+                <a href="https://twitter.com/anushkaa5000" style={{textDecoration: "none", color: "#89ddff"}} target="_blank">{"'anushkaa5000'"};</a>
               </p>
             </p>
             <p style={{ display: "flex" }}>
@@ -64,7 +64,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-
+      
       <div className="Contact__rhs">
         <TabBar tabName="Live Preview" />
         <ContactBrowser />

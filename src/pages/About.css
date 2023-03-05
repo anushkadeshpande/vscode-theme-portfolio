@@ -57,6 +57,7 @@
 .technologyCards {
     display: flex;
     flex-wrap: wrap;
+    margin-left: -20px;
 }
 
 @media screen and (max-width: 800px) {
