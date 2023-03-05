@@ -1,5 +1,6 @@
 import "./Home.css";
 import TabBar from '../components/TabBar'
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -17,15 +18,19 @@ const Home = () => {
             <h3>Start</h3>
             <ul>
               <li>
-                <a>Placeholder...</a>
+                <Link to="/about">About Me</Link>
               </li>
 
               <li>
-                <a>Placeholder...</a>
+                <Link to="/projects">My Projects</Link>
               </li>
 
               <li>
-                <a>Placeholder...</a>
+                <Link to="/other">Other Activities</Link>
+              </li>
+              
+              <li>
+                <Link to="/contact">Let's chat</Link>
               </li>
             </ul>
           </div>

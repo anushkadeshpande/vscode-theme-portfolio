@@ -92,6 +92,7 @@ background-color: #1D1E22;
         margin-left: 20px;
         margin-top: 60px;
         margin-right: 20px;
+        width: calc(100vw - 90px);
     }
 
     .Home__content {
@@ -104,5 +105,9 @@ background-color: #1D1E22;
     .Home__content__rhs {
         margin-top: 40px;
         width: 95%;
+    }
+
+    .Home__content__lhs__section > ul > li {
+        width: calc(100vw - 90px); 
     }
 }

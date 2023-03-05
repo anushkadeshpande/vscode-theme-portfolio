@@ -27,6 +27,16 @@
     font-size: 18px;
 }
 
+.lineNo {
+    font-style: normal;
+    color: #4a4a4a;
+    font-weight: 600;
+    line-height:30px;
+    font-size: 18px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
 .Contact__contactInfo {
     font-size: 20px;
     font-weight: 400;
