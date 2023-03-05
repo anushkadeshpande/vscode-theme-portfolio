@@ -1,12 +1,13 @@
 import { getDocs } from "firebase/firestore";
 import { useState, useEffect, createContext } from 'react'
 import './ProjectsList.css'
-import {projectsCollection} from '../firebase'
+import {projectsCollection, blogsCollection} from '../firebase'
 
 import ProjectsListItem from './ProjectsListItem'
 
 const ProjectsList = () => {
-    const [projects, setProjects] = useState([])
+    const [ projects, setProjects ] = useState([])
+    const [ blogs, setBlogs ] = useState([])
 
     useEffect(() => {
             getDocs(projectsCollection)
@@ -15,7 +16,14 @@ const ProjectsList = () => {
                     .map((doc) => ({...doc.data(), id:doc.id }));  
                     
                     setProjects(newData)
-                // console.log(newData);
+            })
+
+            getDocs(blogsCollection)
+            .then((querySnapshot)=>{               
+                const newData = querySnapshot.docs
+                    .map((doc) => ({...doc.data(), id:doc.id }));  
+                    
+                    setBlogs(newData)
             })
     }, [])
 
@@ -28,6 +36,18 @@ const ProjectsList = () => {
                         projects?.map((data, key) => <ProjectsListItem data={data} key={key} onClick={(data) => {createContext(data)}}/>)
                     }
                 </div>
+            </div>
+
+            <div className="Blog__list">
+            <div className="BlogsList__title">BLOGS</div>
+            <div className="BlogsList__list">
+                {
+                    blogs?.map((data, key) => <a href={data.URL} target="_blank" className="BlogList__list__item">
+                        {data?.Name}
+                    </a>)
+                }
+            </div>
+            
             </div>
 
         </div>

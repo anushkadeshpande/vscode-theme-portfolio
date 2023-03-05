@@ -13,6 +13,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app)
 const projectsCollection = collection(db, 'Projects')
+const blogsCollection = collection(db, 'Blogs')
 
-export { projectsCollection }
+export { projectsCollection, blogsCollection }
 

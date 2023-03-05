@@ -26,6 +26,11 @@
 ::-webkit-scrollbar{
   width: 13px;
   border: 0.1px solid rgba(255, 255, 255, 0.185);
+  border: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #333333;
 }
 
 ::-webkit-scrollbar-thumb:hover {
