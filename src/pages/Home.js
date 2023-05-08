@@ -26,7 +26,7 @@ const Home = () => {
               </li>
 
               <li>
-                <a href="https://annkived.web.app/" target="_blank">Other Activities</a>
+                <a href="https://annkive.web.app/" target="_blank">Other Activities</a>
               </li>
               
               <li>
@@ -76,7 +76,7 @@ const Home = () => {
                 </Link>
             </li>
 
-            <li><a href="https://annkived.web.app/" target="_blank">
+            <li><a href="https://annkive.web.app/" target="_blank">
                 <div className="list_item_header">Archive</div>
                 <div className="list_item_description">Enter my annkive!</div>
                 </a>
