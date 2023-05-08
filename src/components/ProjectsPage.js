@@ -25,7 +25,7 @@ const ProjectsPage = () => {
             </h1>
 
             <p>
-              {projectData.project.Description}
+              {projectData.project.Intro}
             </p>
 
             <div className="header__buttons" >
