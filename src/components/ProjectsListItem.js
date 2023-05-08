@@ -11,7 +11,7 @@ const ProjectsListItem = ({ data }) => {
       <span>
         <div className="project_details">
           <h4>{data.Name}</h4>
-          <h5>{data.Description}</h5>
+          <h5>{data.Intro}</h5>
         </div>
 
         <button onClick={() => projectData.updateState(data)}>Open</button>

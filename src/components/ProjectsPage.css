@@ -52,6 +52,12 @@
   border-radius: 2px;
 }
 
+.ProjectsPage__body__content {
+  margin-top: 30px;
+  height: 40vh;
+  overflow-y: scroll;
+}
+
 @media screen and (max-width: 800px) {
   .ProjectsPage__body {
     /* width: calc(100% - 60px); */
