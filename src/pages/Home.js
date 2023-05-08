@@ -44,8 +44,8 @@ const Home = () => {
               </li>
 
               <li>
-                <a href="https://instagram-4.web.app" target="_blank">Instagram Clone</a>
-                <p>instagram-4.web.app</p>
+                <a href="https://slacchat.web.app" target="_blank">Slack Clone</a>
+                <p>slacchat.web.app</p>
               </li>
             </ul>
           </div>
