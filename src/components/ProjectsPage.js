@@ -78,9 +78,28 @@ const ProjectsPage = () => {
           imgUrl += projectData?.project?.Description[i]
           i++
         }
-        desc += `<img src=${imgUrl} style="height: ${height}px;width: ${width}px"/>`
+        desc += `<img src=${imgUrl} style="height: ${height}px;width: ${width}px; display: flex; margin: auto auto"/>`
       }
 
+      // check for lists
+      else if(projectData?.project?.Description[i] === '^') {
+        desc += '<ul>'
+        i++
+        while(projectData?.project?.Description[i] !== '^') {
+          if(projectData?.project?.Description[i] === '-') {
+            desc += '<li>'
+            i++
+            while(projectData?.project?.Description[i] !== '-' && projectData?.project?.Description[i] !== '^') {
+              desc += projectData?.project?.Description[i]
+              i++
+            }
+            desc += '</li>'
+          }
+        }
+          desc += '</ul>'
+          
+        // }
+      }
       else 
         desc += projectData?.project?.Description[i]
     }
