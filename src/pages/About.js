@@ -107,7 +107,6 @@ const About = () => {
             <p className="About__section__head" id="educationSection">Education</p>
             <p style={{fontSize:"20px", marginTop: "20px", fontWeight: 400}}>Bachlor of Engineering  -  <span style={{color:"#b1b1b1", fontWeight: 200}}>Information Technology</span></p>
             <p style={{fontSize: "15px"}}>2018 - 2022</p>
-            <p style={{fontSize: "16px", color: "#a2a2a2", marginTop: "10px"}}>First class with distinction with a CGPA of 9.24</p>
           </div>
 
           <div className="About__section">
