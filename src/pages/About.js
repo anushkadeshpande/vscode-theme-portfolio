@@ -98,8 +98,12 @@ const About = () => {
 
           <div className="About__section">
             <p className="About__section__head" id="workExpSection">Work Experience</p>
+            <p style={{fontSize:"20px", marginTop: "20px", fontWeight: 400}}><img src="https://companieslogo.com/img/orig/MSFT-a203b22d.png?t=1722952497" style={{height: "15px", marginRight: "10px"}} />Microsoft -  <span style={{color:"#b1b1b1", fontWeight: 200}}>Software Developer</span></p>
+            <p style={{fontSize: "15px"}}>January, 2025 - Present</p>
+            <p style={{fontSize: "18px", color: "#a2a2a2", visibility: "hidden"}}>Worked on technologies like Spring Boot, Oracle DB, Java</p>
+
             <p style={{fontSize:"20px", marginTop: "20px", fontWeight: 400}}><img src="https://companieslogo.com/img/orig/ORCL-d5a587ae.png?t=1633210264" style={{height: "15px", marginRight: "10px"}} />Oracle -  <span style={{color:"#b1b1b1", fontWeight: 200}}>Software Developer</span></p>
-            <p style={{fontSize: "15px"}}>July, 2022 - Present</p>
+            <p style={{fontSize: "15px"}}>July, 2022 - December, 2024</p>
             <p style={{fontSize: "18px", color: "#a2a2a2", visibility: "hidden"}}>Worked on technologies like Spring Boot, Oracle DB, Java</p>
           </div>
 
