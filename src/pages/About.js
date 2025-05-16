@@ -113,12 +113,13 @@ const About = () => {
             <p style={{fontSize: "15px"}}>2018 - 2022</p>
           </div>
 
-          <div className="About__section">
+          {/* Removed internship section since not relevant anymore */}
+          {/* <div className="About__section">
             <p className="About__section__head" id="internshipSection">Internship</p>
             <p style={{fontSize:"20px", marginTop: "20px", fontWeight: 400}}><img src="https://portal.coepvlab.ac.in/InTechOlympiad/resource/images/ITO-LOGO.png" style={{height: "15px", marginRight: "10px"}} />InTech Olympiad</p>
             <p style={{fontSize: "15px"}}>May 2020 - July 2020</p>
-            {/* <p style={{fontSize: "16px", color: "#a2a2a2", marginTop: "10px"}}>Worked on ideation and mobile app UI designing and wireframing</p> */}
-          </div>
+            
+          </div> */}
           
           <div className="About__section">
             <p className="About__section__head" id="technologySection">Technologies Worked on</p>
